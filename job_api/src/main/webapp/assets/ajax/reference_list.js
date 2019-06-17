@@ -18,4 +18,18 @@ $(document).ready(function () {
 	            ]
 	    });	
 	
+	
+	$('#tableReference').on( 'click', 'tbody tr', function () {
+
+	    //id = table.row(this).data().id;
+		//$('#tmSessionType').val(table.row(this).data().sessionType);
+		
+		$('#firstName').val(table.row(this).data().firstName);
+		
+	
+	    $('#myModal').modal('show');
+
+    } );	
+	
+	
 });

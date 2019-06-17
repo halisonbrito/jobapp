@@ -6,9 +6,6 @@ import java.util.stream.Collectors;
 
 public class Reference implements Serializable{
 	
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 
 	private Long id;
@@ -20,8 +17,6 @@ public class Reference implements Serializable{
 	private String jobTitle;
 	
 	private String relationship;
-	
-	private String address;
 	
 	private Long studentId;
 	
@@ -65,14 +60,6 @@ public class Reference implements Serializable{
 
 	public void setRelationship(String relationship) {
 		this.relationship = relationship;
-	}
-
-	public String getAddress() {
-		return address;
-	}
-
-	public void setAddress(String address) {
-		this.address = address;
 	}
 
 	public Long getStudentId() {

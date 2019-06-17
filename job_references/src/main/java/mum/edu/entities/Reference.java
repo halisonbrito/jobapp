@@ -35,8 +35,6 @@ public class Reference implements Serializable{
 	
 	private String relationship;
 	
-	private String address;
-	
 	@Column(name = "student_id")
 	private Long studentId;
 	
@@ -81,14 +79,6 @@ public class Reference implements Serializable{
 
 	public void setRelationship(String relationship) {
 		this.relationship = relationship;
-	}
-
-	public String getAddress() {
-		return address;
-	}
-
-	public void setAddress(String address) {
-		this.address = address;
 	}
 
 	public Long getStudentId() {

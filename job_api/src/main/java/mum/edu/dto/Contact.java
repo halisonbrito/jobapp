@@ -8,19 +8,18 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 
 public class Contact implements Serializable{
 	
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 
 	private Long id;
 	
-	private String description;
-
-	@JsonIgnore
-	private Reference reference; 
+	private String type;
 	
-	private List<ContactType> contactTypes;
+	private String email;
+	
+	private String phone;
+	
+	@JsonIgnore
+	private Reference reference;
 
 	public Long getId() {
 		return id;
@@ -30,12 +29,28 @@ public class Contact implements Serializable{
 		this.id = id;
 	}
 
-	public String getDescription() {
-		return description;
+	public String getType() {
+		return type;
 	}
 
-	public void setDescription(String description) {
-		this.description = description;
+	public void setType(String type) {
+		this.type = type;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getPhone() {
+		return phone;
+	}
+
+	public void setPhone(String phone) {
+		this.phone = phone;
 	}
 
 	public Reference getReference() {
@@ -46,14 +61,8 @@ public class Contact implements Serializable{
 		this.reference = reference;
 	}
 
-	public List<ContactType> getContactTypes() {
-		return contactTypes;
-	}
-
-	public void setContactTypes(List<ContactType> contactTypes) {
-		this.contactTypes = contactTypes.stream()
-				.map( contactType -> {contactType.setContact(this); return contactType;} )
-				.collect(Collectors.toList());
-	}
-
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	} 
+	
 }

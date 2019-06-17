@@ -16,23 +16,21 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 @Entity
 public class Contact implements Serializable{
 	
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1348475339629592829L;
 
 	@Id
 	@GeneratedValue
 	private Long id;
 	
-	private String description;
+	private String type;
+	
+	private String email;
+	
+	private String phone;
 	
 	@ManyToOne
 	@JsonIgnore
-	private Reference reference; 
-	
-	@OneToMany(mappedBy = "contact",cascade = CascadeType.ALL,orphanRemoval = true)
-	private List<ContactType> contactTypes;
+	private Reference reference;
 
 	public Long getId() {
 		return id;
@@ -42,12 +40,28 @@ public class Contact implements Serializable{
 		this.id = id;
 	}
 
-	public String getDescription() {
-		return description;
+	public String getType() {
+		return type;
 	}
 
-	public void setDescription(String description) {
-		this.description = description;
+	public void setType(String type) {
+		this.type = type;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getPhone() {
+		return phone;
+	}
+
+	public void setPhone(String phone) {
+		this.phone = phone;
 	}
 
 	public Reference getReference() {
@@ -58,14 +72,9 @@ public class Contact implements Serializable{
 		this.reference = reference;
 	}
 
-	public List<ContactType> getContactTypes() {
-		return contactTypes;
-	}
-
-	public void setContactTypes(List<ContactType> contactTypes) {
-		this.contactTypes = contactTypes.stream()
-				.map( contactType -> {contactType.setContact(this); return contactType;} )
-				.collect(Collectors.toList());
-	}
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	} 
+	
 
 }
