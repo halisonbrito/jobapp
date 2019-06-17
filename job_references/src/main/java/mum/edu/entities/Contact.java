@@ -1,5 +1,6 @@
 package mum.edu.entities;
 
+import java.io.Serializable;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -10,9 +11,16 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 @Entity
-public class Contact {
+public class Contact implements Serializable{
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1348475339629592829L;
+
 	@Id
 	@GeneratedValue
 	private Long id;
@@ -20,6 +28,7 @@ public class Contact {
 	private String description;
 	
 	@ManyToOne
+	@JsonIgnore
 	private Reference reference; 
 	
 	@OneToMany(mappedBy = "contact",cascade = CascadeType.ALL,orphanRemoval = true)

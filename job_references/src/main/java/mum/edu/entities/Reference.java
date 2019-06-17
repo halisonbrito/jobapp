@@ -1,5 +1,6 @@
 package mum.edu.entities;
 
+import java.io.Serializable;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -12,8 +13,13 @@ import javax.persistence.OneToMany;
 import javax.websocket.ClientEndpoint;
 
 @Entity
-public class Reference {
+public class Reference implements Serializable{
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	@GeneratedValue
 	@Id
 	private Long id;

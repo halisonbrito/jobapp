@@ -1,13 +1,20 @@
 package mum.edu.entities;
 
+import java.io.Serializable;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
 @Entity
-public class ContactType {
+public class ContactType implements Serializable {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 6904882602715623991L;
+
 	@Id
 	@GeneratedValue
 	private Long id;

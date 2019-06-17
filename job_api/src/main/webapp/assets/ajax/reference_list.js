@@ -1,6 +1,6 @@
 $(document).ready(function () {
 	
-	var url = "http://localhost:8080/references/1";
+	var url = "http://localhost:888/references/1";
 	
 	var table = $('#tableReference').DataTable({
 	       dom: 'lBfrtip',
@@ -10,10 +10,10 @@ $(document).ready(function () {
 	            dataSrc: ''
 	        },
 	        "columns": [
-	            {"data": "name"},
-	            {"data": "name"},
-	            {"data": "name"},
-	            {"data": "name"}
+	            {"data": "firstName"},
+	            {"data": "firstName"},
+	            {"data": "firstName"},
+	            {"data": "firstName"}
 
 	            ]
 	    });	

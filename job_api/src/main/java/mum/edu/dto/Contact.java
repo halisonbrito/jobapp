@@ -1,14 +1,23 @@
 package mum.edu.dto;
 
+import java.io.Serializable;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class Contact {
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+public class Contact implements Serializable{
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	private Long id;
 	
 	private String description;
 
+	@JsonIgnore
 	private Reference reference; 
 	
 	private List<ContactType> contactTypes;

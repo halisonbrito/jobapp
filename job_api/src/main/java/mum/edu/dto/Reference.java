@@ -1,10 +1,16 @@
 package mum.edu.dto;
 
+import java.io.Serializable;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class Reference {
+public class Reference implements Serializable{
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	private Long id;
 	
 	private String firstName;
