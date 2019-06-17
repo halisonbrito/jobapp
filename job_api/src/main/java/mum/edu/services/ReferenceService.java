@@ -2,6 +2,8 @@ package mum.edu.services;
 
 import java.util.List;
 
+import org.springframework.core.ParameterizedTypeReference;
+import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
@@ -20,23 +22,22 @@ public class ReferenceService {
 		
 		ResponseEntity<List<Reference>> response =
 				restTemplate.exchange(urlId, HttpMethod.GET, null,
-				new ParameterizedTypeReference<List<Person>>() {});
-				return response.getBody();
+				new ParameterizedTypeReference<List<Reference>>() {});
 		
-		return restTemplate.getForObject(urlId, Reference.class, studentId);
+		return response.getBody();
 	}
 	
 	public void save(Reference reference) {
-		restTemplate.postForLocation(url, request);
+		restTemplate.postForLocation(url, url);
 	}
 
 	public void update(Reference reference) {
-		restTemplate.put(url, request);
+		restTemplate.put(url, reference);
 	}
 	
 	
 	public void delete(Long id) {
-		dao.deleteById(id);
+		restTemplate.delete(urlId);
 	}
 	
 }

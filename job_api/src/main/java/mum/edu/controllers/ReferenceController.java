@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import mum.edu.entities.Reference;
+import mum.edu.dto.Reference;
 import mum.edu.services.ReferenceService;
 
 @RestController
@@ -27,12 +27,12 @@ public class ReferenceController {
 	
 	@PostMapping("/references")
 	public void save(@RequestBody Reference reference) {
-		service.saveOrUpdate(reference);
+		service.save(reference);
 	}
 	
 	@PutMapping("/references")
 	public void update(@RequestBody Reference reference) {
-		service.saveOrUpdate(reference);
+		service.update(reference);
 	}
 	
 	@DeleteMapping("/references/{id}")
