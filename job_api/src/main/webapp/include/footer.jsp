@@ -35,6 +35,13 @@
     <script src="../assets/global/plugins/jquery.bootgrid-1.2.0/jquery.bootgrid.js"></script>
     <script src="../assets/global/plugins/jquery.bootgrid-1.2.0/jquery.bootgrid.fa.min.js"></script>
 
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/select/1.3.0/js/dataTables.select.min.js"></script>
+
+
+    
+
 
 
    

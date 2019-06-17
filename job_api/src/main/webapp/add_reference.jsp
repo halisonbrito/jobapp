@@ -77,9 +77,10 @@
                     </div>
             
             </form> 
-            </div>
-        </div>
+          </div>
+       </div>
 
-        </div>
+     </div>
+  </div>
             
 <jsp:include page="include/footer.jsp" />
