@@ -17,7 +17,22 @@
                         <h3>List Reference</h3>
                     </div>
                     <div class="panel-body">
-
+                    
+						<div class="form-group">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="cal-control pull-left">
+                                        <button type="button" data-loading-text="Loading..."
+                                                class="btn btn-success pull-right" 
+                                                onclick="window.location = 'http://localhost:8080/add_reference.jsp'" >
+                                                Add
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                    
+                    
+                    
 					    <table id="tableReference" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
 					        <thead>
 					        <tr>
@@ -25,7 +40,7 @@
 					            <th class="th-sm">Student ID</th>
 					            <th class="th-sm">Student Name</th>
 					            <th class="th-sm">Session Type</th>
-					            <th class="th-sm">Date</th>
+					            <th class="th-sm">Entry</th>
 					        </tr>
 					        </thead>
 					    </table>

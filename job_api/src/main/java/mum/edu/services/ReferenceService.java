@@ -28,8 +28,6 @@ public class ReferenceService {
 	
 	
 	public List<Reference> find(Long studentId){
-		
-		System.out.println(getUrlServiceReference()+"{id}");
 		ResponseEntity<List<Reference>> response =
 				restTemplate.exchange(getUrlServiceReference()+"{id}", HttpMethod.GET, null,
 				new ParameterizedTypeReference<List<Reference>>() {},studentId);
