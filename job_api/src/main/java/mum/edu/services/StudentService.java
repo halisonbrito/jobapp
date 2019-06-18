@@ -11,12 +11,10 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import mum.edu.ConfigProperties;
-import mum.edu.dto.Company;
-import mum.edu.dto.Reference;
 import mum.edu.dto.Student;
 
 @Service
-public class StudentService {
+public class StudentService implements IStudentService{
 	
 	@Autowired
 	private RestTemplate restTemplate;

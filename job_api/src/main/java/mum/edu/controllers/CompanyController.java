@@ -14,13 +14,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import mum.edu.dto.Company;
-import mum.edu.services.CompanyService;
+import mum.edu.services.ICompanyService;
 
 @RestController
 @RequestMapping("/companies")
 public class CompanyController {
     @Resource
-    private CompanyService companyService;
+    private ICompanyService companyService;
 
     @GetMapping
     public List<Company> getAllCompanies(){

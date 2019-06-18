@@ -12,7 +12,7 @@ import mum.edu.repositories.ReferenceDao;
 
 @Service
 @Transactional
-public class ReferenceService {
+public class ReferenceService implements IReferenceService{
 
 	@Autowired
 	private ReferenceDao dao;

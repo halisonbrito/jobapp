@@ -10,11 +10,10 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import mum.edu.ConfigProperties;
-import mum.edu.ConfigProperties;
 import mum.edu.dto.Reference;
 
 @Service
-public class ReferenceService {
+public class ReferenceService implements IReferenceService{
 	
 	@Autowired
 	private RestTemplate restTemplate;
@@ -45,7 +44,7 @@ public class ReferenceService {
 	
 	
 	public void delete(Long id) {
-		restTemplate.delete(getUrlServiceReference()+"{id}");
+		restTemplate.delete(getUrlServiceReference()+"{id}",id);
 	}
 	
 }
