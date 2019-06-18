@@ -30,7 +30,7 @@ public class ReferenceService {
 	}
 	
 	public void save(Reference reference) {
-		restTemplate.postForLocation(url, url);
+		restTemplate.postForLocation(url, reference);
 	}
 
 	public void update(Reference reference) {

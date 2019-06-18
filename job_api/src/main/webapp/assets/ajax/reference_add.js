@@ -1,6 +1,6 @@
 $(document).ready(function () {
 	
-	$("#").on('click', function (evt) {
+	$("#save").on('click', function (evt) {
 		
         var studentId = $("#studentId").val();
         var firstName = $("#firstName").val();
@@ -16,7 +16,7 @@ $(document).ready(function () {
         var listContact = [{email:cemail,phone:cphone,type:'Company'}
         				  ,{email:pemail,phone:pphone,type:'Personal'}];
 
-		var dataObject = { studentId:studentId, firstName:firstName, contacts:listContact,
+		var dataObject = { studentId:studentId,lastName:lastName, firstName:firstName, contacts:listContact,
 					 relationship:relationship, company:company, jobTitle:jobTitle };
 		
 		var jsonData = JSON.stringify(dataObject);
@@ -28,24 +28,10 @@ $(document).ready(function () {
             data: jsonData,
             contentType: 'application/json',   // Sends
             success: function (session) {
-                $("#sucess").text("Success!");
-                $("#error").text("");
+            	alert("Success !!")
             },
             error: function (data) {
-                $("#sucess").text("");
-
-                var messages = "";
-
-                if (data.responseJSON.validationMessages) {
-                    $.each(data.responseJSON.validationMessages, function (index, errorMessage) {
-                        messages += errorMessage + "<br>"
-                    });
-                } else {
-                    messages = data.responseJSON.userMessage;
-                }
-
-                $("#error").text("");
-                $("#error").append(messages);
+            	alert("Error !!")
             }
         })		
 		
