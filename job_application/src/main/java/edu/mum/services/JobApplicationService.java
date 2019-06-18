@@ -34,8 +34,10 @@ public class JobApplicationService implements IJobApplicationService{
                     return true;
                 return false;
             }).findAny();
-            if (optional.isPresent())
+            if (optional.isPresent()) {
                 app.setStudentName(optional.get().getName());
+                app.setStudentId(optional.get().getId());
+            }
         });
         applications.stream().forEach(app -> {
             Optional<Company> optional = companies.stream().filter(c -> {
@@ -43,8 +45,10 @@ public class JobApplicationService implements IJobApplicationService{
                     return true;
                 return false;
             }).findAny();
-            if (optional.isPresent())
+            if (optional.isPresent()) {
                 app.setCompanyName(optional.get().getName());
+                app.setCompanyId(optional.get().getId());
+            }
         });
         return applications;
     }

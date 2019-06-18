@@ -41,7 +41,7 @@
                                             </div>
                                             <div class="col-md-4">
                                                 <label>Phone:</label>
-                                                <input  class="form-control" name="phone" id="phone" type="text">
+                                                <input  class="form-control" name="phone" id="phone" type="number">
                                             </div>
                                         </div>
                                     </div>

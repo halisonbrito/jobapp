@@ -1,33 +1,37 @@
 package edu.mum.controllers;
 
+import edu.mum.entities.JobApplication;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.*;
 
 @Controller
-public class JobApplicationController {
+@RequestMapping("/test")
+public class TestJobApplicationController {
 
     @GetMapping("/")
     public String index(){
-        return "redirect:/add";
+        return "redirect:/companies";
     }
-    @GetMapping("/add")
+    @GetMapping("/addcompany")
     public String add(){
         return "add_company";
     }
 
-    @GetMapping("/application")
+    @GetMapping("/addapplication")
     public String application(){
-        return "add_jobApplication";
+        return "add_application";
     }
 
-    @GetMapping("/applicationlist")
+    @GetMapping("/applications")
     public String applicationList(){
         return "list_applications";
     }
 
-    @GetMapping("/addlist")
+    @GetMapping("/companies")
     public String companyList(){
         return "list_companies";
     }
+
+
 
 }

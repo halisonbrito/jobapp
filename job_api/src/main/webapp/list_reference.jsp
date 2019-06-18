@@ -7,7 +7,7 @@
 
 
  <div class="main-content-inner">
-              
+
   		<div class="row">
             <div class="col-md-12">
 
@@ -17,7 +17,7 @@
                         <h3>List Reference</h3>
                     </div>
                     <div class="panel-body">
-                    
+
 					    <table id="tableReference" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
 					        <thead>
 					        <tr>
@@ -29,8 +29,8 @@
 					        </tr>
 					        </thead>
 					    </table>
-					    
-					    
+
+
 
 					    <div id="myModal" class="modal fade" role="dialog" >
 					        <div class="modal-dialog" >
@@ -42,11 +42,11 @@
 					                </div>
 					                <div class="modal-body" style="width:100%">
 					                    <form>
-					                    
-					                    
+
+
 					                        <div class="row">
 					                            <div class="col-md-12">
-				
+
 				                                   <div class="form-group">
 				                                   		<div class="row">
 			                                               <div class="col-md-4">
@@ -56,27 +56,27 @@
 				                                           
 				                                               <div class="col-md-4">
 				                                                   <label>First Name:</label>
-				                                                   <input  class="form-control" name="firstName" id="firstName" type="text"> 
+				                                                   <input  class="form-control" name="firstName" id="firstName" type="text">
 				                                               </div>
 				                                               <div class="col-md-4">
 				                                                   <label>Last Name:</label>
-				                                                   <input  class="form-control" name="lastName" id="lastName" type="text"> 
+				                                                   <input  class="form-control" name="lastName" id="lastName" type="text">
 				                                               </div>
-				                                           
+
 				                                           </div>
 				                                    </div>
-				
-					                            
+
+
 				                                   <div class="form-group">
 				                                   		  <div class="row">
 				                                            <div class="col-md-4">
 				                                                <label>Relationship:</label>
-				                                                <input  class="form-control" name="relationship" id="relationship" type="text"> 
+				                                                <input  class="form-control" name="relationship" id="relationship" type="text">
 				                                            </div>
-				                                           
+
 				                                               <div class="col-md-4">
 				                                                   <label>Company:</label>
-				                                                   <input  class="form-control" name="company" id="company" type="text"> 
+				                                                   <input  class="form-control" name="company" id="company" type="text">
 				                                               </div>
 				                                               <div class="col-md-4">
 				                                                   <label>Job Title:</label>
@@ -89,61 +89,61 @@
 										                                <option value ="Manager">Manager</option>
 										                            </select>
 				                                               </div>
-				                                               
+
 				                                           </div>
 				                                    </div>
-				
+
 				                                   <div class="form-group">
 				                                           <div class="row">
 				                                               <div class="col-md-3">
 				                                                   <label>Company Email:</label>
-				                                                   <input  class="form-control" name="cemail" id="cemail" type="email"> 
+				                                                   <input  class="form-control" name="cemail" id="cemail" type="email">
 				                                               </div>
 				                                               <div class="col-md-3">
 				                                                   <label>Company Phone:</label>
-				                                                   <input  class="form-control" name="cphone" id="cphone" type="tel"> 
+				                                                   <input  class="form-control" name="cphone" id="cphone" type="tel">
 				                                               </div>
 					                                            <div class="col-md-3">
 					                                                <label>Personal Email:</label>
-					                                                <input  class="form-control" name="pemail" id="pemail" type="email"> 
+					                                                <input  class="form-control" name="pemail" id="pemail" type="email">
 					                                            </div>
 					                                            <div class="col-md-3">
 					                                                <label>Personal Phone:</label>
-					                                                <input  class="form-control" name="pphone" id="pphone" type="tel"> 
+					                                                <input  class="form-control" name="pphone" id="pphone" type="tel">
 					                                            </div>
-				                                               
+
 				                                           </div>
-				                                           
+
 				                                    </div>
-					                            
+
 						                        </div>
 						                    </div>
-					                    
+
 					                        <button type="button" class="btn btn-primary" id ="update" >Update</button>
 					                        <button type="button" class="btn btn-danger" id ="delete">Delete</button>
-					
+
 					                    </form>
-					
+
 					                </div>
 					                <div class="modal-footer">
 					                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 					                </div>
 					            </div>
-					
+
 					        </div>
 					    </div>
 
 
-					    
-                    
-                    
+
+
+
                     </div>
                 </div>
               </div>
           </div>
       </div>
  </div>
-          
-          
-<jsp:include page="include/footer.jsp" />  
+
+
+<jsp:include page="include/footer.jsp" />
 <script src="../assets/ajax/reference_list.js"></script>          
