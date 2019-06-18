@@ -34,7 +34,7 @@ function load(ref){
 
 $(document).ready(function () {
 	
-	var url = "http://localhost:888/students";
+	var url = "http://localhost:8080/students";
 	
 	var table = $('#tableReference').DataTable({
 		 	"paging":false,
@@ -133,7 +133,7 @@ $(document).ready(function () {
 		
 		
         $.ajax({
-            url: "http://localhost:888/references",
+            url: "http://localhost:8080/references",
             type: 'PUT',
             data: jsonData,
             contentType: 'application/json',   // Sends

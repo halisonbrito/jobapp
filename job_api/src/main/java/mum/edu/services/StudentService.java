@@ -10,13 +10,12 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
+import mum.edu.ConfigProperties;
 import mum.edu.dto.Reference;
 import mum.edu.dto.Student;
 
 @Service
 public class StudentService {
-	
-	private final String urlStudents = "http://localhost:999/students/";
 	
 	@Autowired
 	private RestTemplate restTemplate;
@@ -24,8 +23,15 @@ public class StudentService {
 	@Autowired
 	private ReferenceService referenceService;
 	
+	@Autowired
+	private ConfigProperties config;
+
+	private String getUrlServiceJobApp() {
+		return config.getHostName()+":"+config.getPortServiceJobApp()+"/students/";
+	}
+	
 	public List<Student> loadAllStudentsWithReferences(){
-			
+		
 		List<Student> students = findAll().stream().map( student -> {
 			student.setReferences( referenceService.find(student.getId()) );
 			return student;
@@ -37,7 +43,7 @@ public class StudentService {
 	
 	public List<Student> findAll(){
 		ResponseEntity<List<Student>> response =
-				restTemplate.exchange(urlStudents, HttpMethod.GET, null,
+				restTemplate.exchange(getUrlServiceJobApp(), HttpMethod.GET, null,
 				new ParameterizedTypeReference<List<Student>>() {});
 		
 		return response.getBody();

@@ -23,7 +23,7 @@ $(document).ready(function () {
 		
 		
         $.ajax({
-            url: "http://localhost:888/references",
+            url: "http://localhost:8080/references",
             type: 'POST',
             data: jsonData,
             contentType: 'application/json',   // Sends
