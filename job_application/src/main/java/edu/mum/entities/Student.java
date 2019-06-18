@@ -13,6 +13,7 @@ public class Student{
     private String entry;
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinColumn(name = "student_id")
+    @Json
     private List<JobApplication> applications;
 
     public Student() {

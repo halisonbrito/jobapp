@@ -45,4 +45,8 @@ public class CompanyService {
     	restTemplate.put(getUrlServiceCompany(), company);
     }
 
+    public Company get(Ling id){
+		return restTemplate.getForObject(getUrlServiceCompany()+"{id}", Company.class, id);
+	}
+
 }
