@@ -16,6 +16,11 @@ public class JobApplication {
     private String position;
     private Double salary;
 
+    @Transient
+    private String studentName;
+    @Transient
+    private String companyName;
+
     public JobApplication() {
     }
 
@@ -25,6 +30,31 @@ public class JobApplication {
         this.approved = approved;
         this.position = position;
         this.salary = salary;
+    }
+
+    public JobApplication(Date processBeginningDate, String description, String position, Double salary, String studentName, String companyName) {
+        this.processBeginningDate = processBeginningDate;
+        this.description = description;
+        this.position = position;
+        this.salary = salary;
+        this.studentName = studentName;
+        this.companyName = companyName;
+    }
+
+    public String getStudentName() {
+        return studentName;
+    }
+
+    public void setStudentName(String studentName) {
+        this.studentName = studentName;
+    }
+
+    public String getCompanyName() {
+        return companyName;
+    }
+
+    public void setCompanyName(String companyName) {
+        this.companyName = companyName;
     }
 
     public Long getId() {

@@ -12,10 +12,8 @@ public class Company {
     @Id
     @GeneratedValue
     private Long id;
-    @NotNull
-    @NotBlank
     private String name;
-    private String BusinessType;
+    private String businessType;
     private String description;
     private String phone;
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
@@ -28,7 +26,7 @@ public class Company {
     public Company(Long id, String name, String businessType, String description, String phone) {
         this.id = id;
         this.name = name;
-        BusinessType = businessType;
+        this.businessType = businessType;
         this.description = description;
         this.phone = phone;
     }
@@ -36,6 +34,14 @@ public class Company {
     public void addJobApplication(JobApplication application){
         Objects.requireNonNull(application, "Job application cannot be NULL!");
         appls.add(application);
+    }
+
+    public List<JobApplication> getAppls() {
+        return appls;
+    }
+
+    public void setAppls(List<JobApplication> appls) {
+        this.appls = appls;
     }
 
     public Long getId() {
@@ -55,11 +61,11 @@ public class Company {
     }
 
     public String getBusinessType() {
-        return BusinessType;
+        return businessType;
     }
 
     public void setBusinessType(String businessType) {
-        BusinessType = businessType;
+        this.businessType = businessType;
     }
 
     public String getDescription() {

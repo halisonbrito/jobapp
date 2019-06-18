@@ -33,6 +33,11 @@ public class JobAppRestController {
 
     @GetMapping(value = "/applications", produces = "application/json")
     public List<JobApplication> getAllApplications(){
+        return jobApplicationService.getAllNames();
+    }
+
+    @GetMapping(value = "/applicationswithoutnames", produces = "application/json")
+    public List<JobApplication> getAllApplicationsNoNames(){
         return jobApplicationService.getAll();
     }
 
@@ -73,9 +78,8 @@ public class JobAppRestController {
     }
 
     @PostMapping(value = "/companies", consumes = "application/json")
-    public RedirectView addCompany(@Valid @RequestBody Company company){
+    public void addCompany(@RequestBody Company company){
         companyService.add(company);
-        return new RedirectView("/companies");
     }
 
     @PostMapping(value = "/applications", consumes = "application/json")

@@ -1,0 +1,43 @@
+<jsp:include page="/include/head.jsp" />
+<jsp:include page="/include/menu-topo.jsp" />
+
+
+ <div class="main-content">
+
+
+
+ <div class="main-content-inner">
+              
+  		<div class="row">
+            <div class="col-md-12">
+
+                <!-- Form Elements -->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3>List of Job applications</h3>
+                    </div>
+                    <div class="panel-body">
+                    
+					    <table id="tableApplications" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
+					        <thead>
+					        <tr>
+                                <th class="th-sm">Begin date</th>
+                                <th class="th-sm">Description</th>
+					            <th class="th-sm">Position</th>
+					            <th class="th-sm">Salary</th>
+                                <th class="th-sm">Student name</th>
+                                <th class="th-sm">Company name</th>
+                            </tr>
+					        </thead>
+					    </table>
+                    
+                    </div>
+                </div>
+              </div>
+          </div>
+      </div>
+ </div>
+
+
+<jsp:include page="/include/footer.jsp" />
+<script src="../assets/ajax/actions.js"></script>
