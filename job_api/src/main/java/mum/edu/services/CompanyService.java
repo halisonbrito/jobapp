@@ -13,7 +13,7 @@ import mum.edu.ConfigProperties;
 import mum.edu.dto.Company;
 
 @Service
-public class CompanyService {
+public class CompanyService implements ICompanyService{
 
 	@Autowired
 	private RestTemplate restTemplate;

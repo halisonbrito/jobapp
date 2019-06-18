@@ -7,13 +7,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import mum.edu.dto.Student;
-import mum.edu.services.StudentService;
+import mum.edu.services.IStudentService;
 
 @RestController
 public class StudentController {
 	
 	@Autowired
-	private StudentService studentService;
+	private IStudentService studentService;
 	
 	
 	@GetMapping("/students")

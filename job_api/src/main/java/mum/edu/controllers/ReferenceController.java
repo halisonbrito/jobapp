@@ -12,13 +12,13 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import mum.edu.dto.Reference;
-import mum.edu.services.ReferenceService;
+import mum.edu.services.IReferenceService;
 
 @RestController
 public class ReferenceController {
 	
 	@Autowired
-	private ReferenceService service;
+	private IReferenceService service;
 	
 	@GetMapping("/references/{studentId}")
 	public List<Reference> find(@PathVariable Long studentId){
