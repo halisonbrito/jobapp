@@ -62,6 +62,7 @@ function deleteAction() {
 		url: "http://localhost:8080/applications/"+$("#id").val(),
 		type: 'DELETE',
 		success: function (session) {
+			alert("Success !!")
 			window.location.replace("http://localhost:8080/list_applications.jsp");
 		},
 		error: function (data) {
@@ -88,6 +89,7 @@ function approvedAction() {
         url: "http://localhost:8080/applications/setapproved?appId="+$("#id").val()+"&approved=true",
         type: 'PUT',
         success: function (session) {
+			alert("Success !!")
             window.location.replace("http://localhost:8080/list_applications.jsp");
         },
         error: function (data) {
@@ -130,6 +132,7 @@ function updateAction() {
 		data: jsonData,
 		contentType: 'application/json',   // Sends
 		success: function (session) {
+			alert("Success !!")
 			window.location.replace("http://localhost:8080/list_applications.jsp");
 		},
 		error: function (data) {

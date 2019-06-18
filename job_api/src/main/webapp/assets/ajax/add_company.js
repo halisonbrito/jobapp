@@ -18,6 +18,7 @@ $(document).ready(function () {
             data: jsonData,
             contentType: 'application/json',   // Sends
             success: function (session) {
+                alert("Success !!")
                 window.location.replace("http://localhost:8080/list_companies.jsp");
             },
             error: function (data) {
