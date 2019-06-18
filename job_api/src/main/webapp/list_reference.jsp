@@ -21,6 +21,7 @@
 					    <table id="tableReference" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
 					        <thead>
 					        <tr>
+					        <th class="th-sm"></th>
 					            <th class="th-sm">Student ID</th>
 					            <th class="th-sm">Student Name</th>
 					            <th class="th-sm">Session Type</th>
@@ -47,12 +48,17 @@
 					                            <div class="col-md-12">
 				
 				                                   <div class="form-group">
-				                                           <div class="row">
-				                                               <div class="col-md-6">
+				                                   		<div class="row">
+			                                               <div class="col-md-4">
+			                                                   <label>Student ID:</label>
+			                                                   <input  class="form-control" name="studentId" id="studentId" type="number" disabled="true"> 
+			                                               </div>
+				                                           
+				                                               <div class="col-md-4">
 				                                                   <label>First Name:</label>
 				                                                   <input  class="form-control" name="firstName" id="firstName" type="text"> 
 				                                               </div>
-				                                               <div class="col-md-6">
+				                                               <div class="col-md-4">
 				                                                   <label>Last Name:</label>
 				                                                   <input  class="form-control" name="lastName" id="lastName" type="text"> 
 				                                               </div>

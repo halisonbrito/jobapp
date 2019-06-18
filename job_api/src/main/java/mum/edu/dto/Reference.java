@@ -16,6 +16,8 @@ public class Reference implements Serializable{
 	
 	private String jobTitle;
 	
+	private String company;
+	
 	private String relationship;
 	
 	private Long studentId;
@@ -78,6 +80,14 @@ public class Reference implements Serializable{
 		this.contacts = contacts.stream()
 			.map( contact -> {contact.setReference(this); return contact;} )
 			.collect(Collectors.toList());
+	}
+
+	public String getCompany() {
+		return company;
+	}
+
+	public void setCompany(String company) {
+		this.company = company;
 	}
 	
 

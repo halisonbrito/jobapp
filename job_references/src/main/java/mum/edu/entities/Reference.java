@@ -33,6 +33,8 @@ public class Reference implements Serializable{
 	@Column(name="job_title")
 	private String jobTitle;
 	
+	private String company;
+	
 	private String relationship;
 	
 	@Column(name = "student_id")
@@ -97,6 +99,14 @@ public class Reference implements Serializable{
 		this.contacts = contacts.stream()
 			.map( contact -> {contact.setReference(this); return contact;} )
 			.collect(Collectors.toList());
+	}
+
+	public String getCompany() {
+		return company;
+	}
+
+	public void setCompany(String company) {
+		this.company = company;
 	}
 	
 

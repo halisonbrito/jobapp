@@ -9,37 +9,45 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
+import mum.edu.ConfigProperties;
+import mum.edu.ConfigProperties;
 import mum.edu.dto.Reference;
 
 @Service
 public class ReferenceService {
 	
-	private final String urlId = "http://localhost:8080/references/{id}";
-	private final String url = "http://localhost:8080/references/";
-	
 	@Autowired
 	private RestTemplate restTemplate;
 	
+	@Autowired
+	private ConfigProperties config;
+
+	private String getUrlServiceReference() {
+		return config.getHostName()+":"+config.getPortServiceReferencia()+"/references/";
+	}
+	
+	
 	public List<Reference> find(Long studentId){
 		
+		System.out.println(getUrlServiceReference()+"{id}");
 		ResponseEntity<List<Reference>> response =
-				restTemplate.exchange(urlId, HttpMethod.GET, null,
+				restTemplate.exchange(getUrlServiceReference()+"{id}", HttpMethod.GET, null,
 				new ParameterizedTypeReference<List<Reference>>() {},studentId);
 		
 		return response.getBody();
 	}
 	
 	public void save(Reference reference) {
-		restTemplate.postForLocation(url, url);
+		restTemplate.postForLocation(getUrlServiceReference(), reference);
 	}
 
 	public void update(Reference reference) {
-		restTemplate.put(url, reference);
+		restTemplate.put(getUrlServiceReference(), reference);
 	}
 	
 	
 	public void delete(Long id) {
-		restTemplate.delete(urlId);
+		restTemplate.delete(getUrlServiceReference()+"{id}");
 	}
 	
 }
