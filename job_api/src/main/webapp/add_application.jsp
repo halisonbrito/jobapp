@@ -30,7 +30,7 @@
                                            <div class="row">
                                                <div class="col-md-4">
                                                    <label>Begin date:</label>
-                                                   <input  class="form-control" name="processBeginningDate" id="processBeginningDate" type="datetime">
+                                                   <input  class="form-control" name="processBeginningDate" id="processBeginningDate" type="date">
                                                    <input  class="form-control" name="id" id="id" type="hidden">
                                                </div>
                                                <div class="col-md-4">

@@ -34,8 +34,8 @@ $(document).ready(function () {
 
 		//id = table.row(this).data().id;
 		//$('#tmSessionType').val(table.row(this).data().sessionType);
-
-		$('#processBeginningDate').val(table.row(this).data().processBeginningDate);
+		var date = table.row(this).data().processBeginningDate;
+		$('#processBeginningDate').val(date.substr(0,10));
 		$('#description').val(table.row(this).data().description);
 		$('#approved').val(table.row(this).data().approved);
 		$('#position').val(table.row(this).data().position);
@@ -53,9 +53,9 @@ $(document).ready(function () {
 		$('#myModal').modal('show');
 
 	} );
-
-
 });
+
+
 
 function deleteAction() {
 	$.ajax({

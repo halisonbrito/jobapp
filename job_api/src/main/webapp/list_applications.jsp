@@ -152,4 +152,5 @@
 
 
     <jsp:include page="/include/footer.jsp"/>
+
     <script src="../assets/ajax/application_list.js"></script>

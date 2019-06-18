@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="68a87774-437e-4c65-ab9b-d8965a9f80db" name="Default Changelist" comment="finished views">
+    <list default="true" id="68a87774-437e-4c65-ab9b-d8965a9f80db" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/jobapp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jobapp.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/job_api/src/main/java/mum/edu/services/CompanyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/job_api/src/main/java/mum/edu/services/CompanyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/job_application/src/main/java/edu/mum/entities/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/job_application/src/main/java/edu/mum/entities/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job_application/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/job_application/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,8 +18,7 @@
     </execution>
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -33,14 +30,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/job_api/src/main/java/mum/edu/services/CompanyService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
+            <state relative-caret-position="527">
               <caret line="48" column="91" selection-start-line="48" selection-start-column="91" selection-end-line="48" selection-end-column="91" />
-              <folding>
-                <element signature="e#979#980#0" expanded="true" />
-                <element signature="e#1050#1051#0" expanded="true" />
-                <element signature="e#1291#1292#0" expanded="true" />
-                <element signature="e#1352#1353#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -49,7 +40,7 @@
         <entry file="file://$PROJECT_DIR$/job_api/src/main/java/mum/edu/services/JobApplicationService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
-              <caret line="23" column="44" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="44" />
+              <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -57,19 +48,47 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/job_application/src/main/java/edu/mum/controllers/JobApplicationRestController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="30" column="30" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="30" />
+            <state relative-caret-position="255">
+              <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/job_application/src/main/java/edu/mum/entities/Student.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/job_references/src/main/java/mum/edu/entities/Reference.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-34" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/job_api/src/main/webapp/list_reference.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="644">
+              <caret line="128" selection-start-line="128" selection-end-line="128" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/job_application/src/main/java/edu/mum/entities/Student.java">
+        <entry file="file://$PROJECT_DIR$/job_api/src/main/webapp/assets/ajax/reference_list.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+            <state relative-caret-position="-595">
+              <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -79,7 +98,7 @@
         <entry file="file://$PROJECT_DIR$/job_application/src/main/java/edu/mum/controllers/CompanyRestController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="391">
-              <caret line="41" column="29" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="29" />
+              <caret line="45" column="29" selection-start-line="45" selection-start-column="16" selection-end-line="45" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -135,6 +154,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -166,12 +186,57 @@
               <item name="job_api" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jobapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="jobapp" type="462c0819:PsiDirectoryNode" />
               <item name="job_api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jobapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jobapp" type="462c0819:PsiDirectoryNode" />
+              <item name="job_api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="ajax" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jobapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jobapp" type="462c0819:PsiDirectoryNode" />
+              <item name="job_references" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jobapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jobapp" type="462c0819:PsiDirectoryNode" />
+              <item name="job_references" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jobapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jobapp" type="462c0819:PsiDirectoryNode" />
+              <item name="job_references" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jobapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jobapp" type="462c0819:PsiDirectoryNode" />
+              <item name="job_references" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jobapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jobapp" type="462c0819:PsiDirectoryNode" />
+              <item name="job_references" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -180,7 +245,7 @@
             <path>
               <item name="jobapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="jobapp" type="462c0819:PsiDirectoryNode" />
-              <item name="job_api" type="462c0819:PsiDirectoryNode" />
+              <item name="job_references" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -190,18 +255,40 @@
             <path>
               <item name="jobapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="jobapp" type="462c0819:PsiDirectoryNode" />
-              <item name="job_api" type="462c0819:PsiDirectoryNode" />
+              <item name="job_references" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="mum" type="462c0819:PsiDirectoryNode" />
               <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jobapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="jobapp" type="462c0819:PsiDirectoryNode" />
-              <item name="job_api" type="462c0819:PsiDirectoryNode" />
+              <item name="job_references" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mum" type="462c0819:PsiDirectoryNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+              <item name="entities" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jobapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jobapp" type="462c0819:PsiDirectoryNode" />
+              <item name="job_references" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mum" type="462c0819:PsiDirectoryNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+              <item name="repositories" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jobapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jobapp" type="462c0819:PsiDirectoryNode" />
+              <item name="job_references" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -212,34 +299,15 @@
             <path>
               <item name="jobapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="jobapp" type="462c0819:PsiDirectoryNode" />
-              <item name="job_application" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jobapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jobapp" type="462c0819:PsiDirectoryNode" />
-              <item name="job_application" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jobapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jobapp" type="462c0819:PsiDirectoryNode" />
-              <item name="job_application" type="462c0819:PsiDirectoryNode" />
+              <item name="job_references" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jobapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jobapp" type="462c0819:PsiDirectoryNode" />
-              <item name="job_application" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -247,7 +315,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/job_api" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/job_application" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -280,11 +348,21 @@
       <workItem from="1560823127935" duration="620000" />
       <workItem from="1560833482931" duration="3058000" />
       <workItem from="1560840722855" duration="59000" />
+      <workItem from="1560891948711" duration="864000" />
+      <workItem from="1560894197629" duration="237000" />
     </task>
+    <task id="LOCAL-00001" summary="finished views">
+      <created>1560880096988</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1560880096988</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6250000" />
+    <option name="totallyTimeSpent" value="7439000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -298,7 +376,7 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31946307" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32885906" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -343,16 +421,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/job_application/src/main/webapp/WEB-INF/view/test.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/job_api/src/main/webapp/assets/ajax/reference_list.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="19" column="4" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/job_api/src/main/webapp/add_reference.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -360,22 +428,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/job_api/src/main/webapp/list_reference.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2176">
-          <caret line="128" selection-start-line="128" selection-end-line="128" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/job_api/src/main/webapp/assets/ajax/reference_add.js">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/job_application/src/main/java/edu/mum/controllers/CompanyRestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="41" column="29" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="29" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/job_application/src/main/java/edu/mum/controllers/StudentRestController.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -388,39 +442,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/job_application/src/main/webapp/WEB-INF/view/test.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/job_api/src/main/java/mum/edu/services/CompanyService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
+        <state relative-caret-position="527">
           <caret line="48" column="91" selection-start-line="48" selection-start-column="91" selection-end-line="48" selection-end-column="91" />
-          <folding>
-            <element signature="e#979#980#0" expanded="true" />
-            <element signature="e#1050#1051#0" expanded="true" />
-            <element signature="e#1291#1292#0" expanded="true" />
-            <element signature="e#1352#1353#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/job_api/src/main/java/mum/edu/services/JobApplicationService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="23" column="44" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="44" />
+          <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/job_application/src/main/java/edu/mum/controllers/JobApplicationRestController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="30" column="30" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="30" />
+        <state relative-caret-position="255">
+          <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/job_application/src/main/java/edu/mum/controllers/CompanyRestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="45" column="29" selection-start-line="45" selection-start-column="16" selection-end-line="45" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/job_application/src/main/java/edu/mum/entities/Student.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+        <state relative-caret-position="357">
+          <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/job_references/src/main/java/mum/edu/entities/Reference.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/job_api/src/main/webapp/list_reference.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="128" selection-start-line="128" selection-end-line="128" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/job_api/src/main/webapp/assets/ajax/reference_list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-595">
+          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+          <folding>
+            <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
