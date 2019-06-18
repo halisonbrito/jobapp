@@ -23,7 +23,7 @@ public class ReferenceService {
 	private ConfigProperties config;
 
 	private String getUrlServiceReference() {
-		return config.getHostName()+":"+config.getPortServiceReferencia()+"/references/";
+		return config.getHostReference()+":"+config.getPortServiceReference()+"/references/";
 	}
 	
 	

@@ -22,7 +22,7 @@ public class CompanyService {
 	private ConfigProperties config;
 
 	private String getUrlServiceCompany() {
-		return config.getHostName()+":"+config.getPortServiceReferencia()+"/companies/";
+		return config.getHostJobApp()+":"+config.getPortServiceJobApp()+"/companies/";
 	}
 	
     public List<Company> getAll() {
@@ -38,14 +38,14 @@ public class CompanyService {
     }
 
     public void delete(Long id) {
-    	restTemplate.delete(getUrlServiceCompany()+"{id}");
+    	restTemplate.delete(getUrlServiceCompany()+"{id}",id);
     }
 
     public void update(Company company) {
     	restTemplate.put(getUrlServiceCompany(), company);
     }
 
-    public Company get(Ling id){
+    public Company get(Long id){
 		return restTemplate.getForObject(getUrlServiceCompany()+"{id}", Company.class, id);
 	}
 

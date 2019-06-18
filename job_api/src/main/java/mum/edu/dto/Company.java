@@ -4,6 +4,8 @@ package mum.edu.dto;
 import java.util.List;
 import java.util.Objects;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 public class Company {
 
 	private Long id;
@@ -11,12 +13,17 @@ public class Company {
     private String businessType;
     private String description;
     private String phone;
-
+    
+    @JsonIgnore
     List<JobApplication> appls;
 
     public Company() {
     }
 
+    public Company(Long id) {
+    	this.id = id;
+    }    
+    
     public Company(Long id, String name, String businessType, String description, String phone) {
         this.id = id;
         this.name = name;

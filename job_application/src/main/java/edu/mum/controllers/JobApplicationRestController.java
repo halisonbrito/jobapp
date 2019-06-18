@@ -23,11 +23,6 @@ public class JobApplicationRestController {
     private IJobApplicationService jobApplicationService;
 
     @GetMapping
-    public List<JobApplication> getAllApplications(){
-        return jobApplicationService.getAllNames();
-    }
-
-    @GetMapping(value = "/names", produces = "application/json")
     public List<JobApplication> getAllApplicationsNoNames(){
         return jobApplicationService.getAll();
     }
@@ -43,18 +38,8 @@ public class JobApplicationRestController {
     }
 
     @PostMapping
-    public  void addApplication(@RequestBody JobApplication application, @RequestParam Long studId, @RequestParam Long compId){
-        jobApplicationService.add(application);
-        Company company = companyService.get(compId);
-        if (Objects.nonNull(company)) {
-            company.addJobApplication(application);
-            companyService.update(company);
-        }
-        Student student = studentService.get(studId);
-        if (Objects.nonNull(student)) {
-            student.addJobApplication(application);
-            studentService.update(student);
-        }
+    public  void addApplication(@RequestBody JobApplication application){
+    	jobApplicationService.add(application);
     }
 
     @PutMapping

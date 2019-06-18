@@ -10,20 +10,27 @@ import org.springframework.stereotype.Component;
 @ConfigurationProperties
 public class ConfigProperties {
      
-    private String hostName;
-    private int portServiceReferencia;
+    private String hostReference;
+    private String hostJobApp;
+    private int portServiceReference;
     private int portServiceJobApp;
-	public String getHostName() {
-		return hostName;
+	public String getHostReference() {
+		return hostReference;
 	}
-	public void setHostName(String hostName) {
-		this.hostName = hostName;
+	public void setHostReference(String hostReference) {
+		this.hostReference = hostReference;
 	}
-	public int getPortServiceReferencia() {
-		return portServiceReferencia;
+	public String getHostJobApp() {
+		return hostJobApp;
 	}
-	public void setPortServiceReferencia(int portServiceReferencia) {
-		this.portServiceReferencia = portServiceReferencia;
+	public void setHostJobApp(String hostJobApp) {
+		this.hostJobApp = hostJobApp;
+	}
+	public int getPortServiceReference() {
+		return portServiceReference;
+	}
+	public void setPortServiceReference(int portServiceReference) {
+		this.portServiceReference = portServiceReference;
 	}
 	public int getPortServiceJobApp() {
 		return portServiceJobApp;
@@ -32,4 +39,6 @@ public class ConfigProperties {
 		this.portServiceJobApp = portServiceJobApp;
 	}
     
+    
+   
 }

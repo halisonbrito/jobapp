@@ -16,10 +16,11 @@ public class JobApplication {
     private String position;
     private Double salary;
 
-    @Transient
-    private String studentName;
-    @Transient
-    private String companyName;
+    @ManyToOne
+    private Student student;
+    
+    @ManyToOne
+    private Company company;
 
     @Transient
     private Long studentId;
@@ -37,13 +38,11 @@ public class JobApplication {
         this.salary = salary;
     }
 
-    public JobApplication(Date processBeginningDate, String description, String position, Double salary, String studentName, String companyName) {
+    public JobApplication(Date processBeginningDate, String description, String position, Double salary) {
         this.processBeginningDate = processBeginningDate;
         this.description = description;
         this.position = position;
         this.salary = salary;
-        this.studentName = studentName;
-        this.companyName = companyName;
     }
 
     public Long getStudentId() {
@@ -62,23 +61,24 @@ public class JobApplication {
         this.companyId = companyId;
     }
 
-    public String getStudentName() {
-        return studentName;
-    }
 
-    public void setStudentName(String studentName) {
-        this.studentName = studentName;
-    }
+    public Student getStudent() {
+		return student;
+	}
 
-    public String getCompanyName() {
-        return companyName;
-    }
+	public void setStudent(Student student) {
+		this.student = student;
+	}
 
-    public void setCompanyName(String companyName) {
-        this.companyName = companyName;
-    }
+	public Company getCompany() {
+		return company;
+	}
 
-    public Long getId() {
+	public void setCompany(Company company) {
+		this.company = company;
+	}
+
+	public Long getId() {
         return id;
     }
 

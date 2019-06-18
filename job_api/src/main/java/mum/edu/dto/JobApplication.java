@@ -11,10 +11,10 @@ public class JobApplication {
     private String position;
     private Double salary;
 
-    private String studentName;
+    private Student student;
 
-    private String companyName;
-
+    private Company company;
+    
     public JobApplication() {
     }
 
@@ -26,29 +26,11 @@ public class JobApplication {
         this.salary = salary;
     }
 
-    public JobApplication(Date processBeginningDate, String description, String position, Double salary, String studentName, String companyName) {
+    public JobApplication(Date processBeginningDate, String description, String position, Double salary) {
         this.processBeginningDate = processBeginningDate;
         this.description = description;
         this.position = position;
         this.salary = salary;
-        this.studentName = studentName;
-        this.companyName = companyName;
-    }
-
-    public String getStudentName() {
-        return studentName;
-    }
-
-    public void setStudentName(String studentName) {
-        this.studentName = studentName;
-    }
-
-    public String getCompanyName() {
-        return companyName;
-    }
-
-    public void setCompanyName(String companyName) {
-        this.companyName = companyName;
     }
 
     public Long getId() {
@@ -98,4 +80,21 @@ public class JobApplication {
     public void setSalary(Double salary) {
         this.salary = salary;
     }
+
+	public Student getStudent() {
+		return student;
+	}
+
+	public void setStudent(Student student) {
+		this.student = student;
+	}
+
+	public Company getCompany() {
+		return company;
+	}
+
+	public void setCompany(Company company) {
+		this.company = company;
+	}
+    
 }

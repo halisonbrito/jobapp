@@ -1,6 +1,9 @@
 package edu.mum.entities;
 
 import javax.persistence.*;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import java.util.List;
 import java.util.Objects;
 
@@ -11,9 +14,8 @@ public class Student{
     private Long id;
     private String name;
     private String entry;
-    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    @JoinColumn(name = "student_id")
-    @Json
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY,mappedBy = "student")
+    @JsonIgnore
     private List<JobApplication> applications;
 
     public Student() {

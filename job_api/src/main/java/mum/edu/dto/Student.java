@@ -1,19 +1,25 @@
 package mum.edu.dto;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 public class Student{
 
 	private Long id;
     private String name;
     private String entry;
+    
     private List<Reference> references;
     
     public Student() {
     }
 
+    public Student(Long id) {
+    	this.id = id;
+    }    
+    
     public Student(String name, String entry) {
         this.name = name;
         this.entry = entry;

@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import mum.edu.ConfigProperties;
+import mum.edu.dto.Company;
 import mum.edu.dto.Reference;
 import mum.edu.dto.Student;
 
@@ -27,7 +28,7 @@ public class StudentService {
 	private ConfigProperties config;
 
 	private String getUrlServiceJobApp() {
-		return config.getHostName()+":"+config.getPortServiceJobApp()+"/students/";
+		return config.getHostJobApp()+":"+config.getPortServiceJobApp()+"/students/";
 	}
 	
 	public List<Student> loadAllStudentsWithReferences(){
@@ -48,7 +49,10 @@ public class StudentService {
 		
 		return response.getBody();
 	}
-
 	
+	
+    public Student get(Long id){
+		return restTemplate.getForObject(getUrlServiceJobApp()+"{id}", Student.class, id);
+	}
 
 }

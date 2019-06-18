@@ -23,36 +23,21 @@ public class JobApplicationService implements IJobApplicationService{
     @Resource
     private ICompanyService companyService;
 
-    @Override
-    public List<JobApplication> getAllNames() {
-        List<JobApplication> applications = jobApplicationDao.findAll();
-        List<Student> students = studentService.getAll();
-        List<Company> companies = companyService.getAll();
-        applications.stream().forEach(app -> {
-            Optional<Student> optional = students.stream().filter(s -> {
-                if (s.getApplications().contains(app))
-                    return true;
-                return false;
-            }).findAny();
-            if (optional.isPresent()) {
-                app.setStudentName(optional.get().getName());
-                app.setStudentId(optional.get().getId());
-            }
-        });
-        applications.stream().forEach(app -> {
-            Optional<Company> optional = companies.stream().filter(c -> {
-                if (c.getAppls().contains(app))
-                    return true;
-                return false;
-            }).findAny();
-            if (optional.isPresent()) {
-                app.setCompanyName(optional.get().getName());
-                app.setCompanyId(optional.get().getId());
-            }
-        });
-        return applications;
-    }
-
+	/*
+	 * @Override public List<JobApplication> getAllNames() { List<JobApplication>
+	 * applications = jobApplicationDao.findAll(); List<Student> students =
+	 * studentService.getAll(); List<Company> companies = companyService.getAll();
+	 * applications.stream().forEach(app -> { Optional<Student> optional =
+	 * students.stream().filter(s -> { if (s.getApplications().contains(app)) return
+	 * true; return false; }).findAny(); if (optional.isPresent()) {
+	 * app.setStudentName(optional.get().getName());
+	 * app.setStudentId(optional.get().getId()); } });
+	 * applications.stream().forEach(app -> { Optional<Company> optional =
+	 * companies.stream().filter(c -> { if (c.getAppls().contains(app)) return true;
+	 * return false; }).findAny(); if (optional.isPresent()) {
+	 * app.setCompanyName(optional.get().getName());
+	 * app.setCompanyId(optional.get().getId()); } }); return applications; }
+	 */
     @Override
     public List<JobApplication> getAll() {
         return jobApplicationDao.findAll();

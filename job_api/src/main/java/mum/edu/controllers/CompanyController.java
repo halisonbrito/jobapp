@@ -1,4 +1,4 @@
-package edu.mum.controllers;
+package mum.edu.controllers;
 
 import java.util.List;
 
@@ -13,14 +13,14 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import edu.mum.entities.Company;
-import edu.mum.services.ICompanyService;
+import mum.edu.dto.Company;
+import mum.edu.services.CompanyService;
 
 @RestController
 @RequestMapping("/companies")
-public class CompanyRestController {
+public class CompanyController {
     @Resource
-    private ICompanyService companyService;
+    private CompanyService companyService;
 
     @GetMapping
     public List<Company> getAllCompanies(){
@@ -39,7 +39,7 @@ public class CompanyRestController {
 
     @PostMapping
     public void addCompany(@RequestBody Company company){
-        companyService.add(company);
+        companyService.save(company);
     }
 
     @PutMapping

@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import mum.edu.ConfigProperties;
+import mum.edu.dto.Company;
 import mum.edu.dto.JobApplication;
 
 @Service
@@ -22,7 +23,7 @@ public class JobApplicationService {
 	private ConfigProperties config;
 	
 	private String getUrlServiceApplications() {
-		return config.getHostName()+":"+config.getPortServiceReferencia()+"/applications/";
+		return config.getHostJobApp()+":"+config.getPortServiceJobApp()+"/applications/";
 	}
 	
     public List<JobApplication> findAll() {
@@ -40,5 +41,15 @@ public class JobApplicationService {
     public void update(JobApplication jobApplication) {
     	restTemplate.put(getUrlServiceApplications(), jobApplication);
     }
+    
+    public void delete(Long id) {
+    	restTemplate.delete(getUrlServiceApplications()+"{id}",id);
+    }
+    
+    public JobApplication get(Long id){
+		return restTemplate.getForObject(getUrlServiceApplications()+"{id}", JobApplication.class, id);
+	}
+    
+    
 
 }
