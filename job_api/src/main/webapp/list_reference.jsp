@@ -25,7 +25,7 @@
 					            <th class="th-sm">Student ID</th>
 					            <th class="th-sm">Student Name</th>
 					            <th class="th-sm">Session Type</th>
-					            <th class="th-sm">Date</th>
+					            <th class="th-sm">Entry</th>
 					        </tr>
 					        </thead>
 					    </table>

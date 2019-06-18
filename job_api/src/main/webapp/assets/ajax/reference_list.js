@@ -60,7 +60,7 @@ $(document).ready(function () {
 	                 "data":           null,
 	                 "defaultContent": ''
 	             },	        		        
-	            {"data": "name"},
+	            {"data": "id"},
 	            {"data": "name"},
 	            {"data": "references"},
 	            {"data": "entry"}
@@ -138,7 +138,9 @@ $(document).ready(function () {
             data: jsonData,
             contentType: 'application/json',   // Sends
             success: function (session) {
-            	alert("Success !!")
+            	alert("Success !!");
+            	window.location = "http://localhost:8080/list_reference.jsp";
+
             },
             error: function (data) {
             	alert("Error !!")

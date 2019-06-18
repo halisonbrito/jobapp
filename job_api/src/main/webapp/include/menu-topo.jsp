@@ -3,7 +3,7 @@
        <div class="sidebar-menu">
            <div class="sidebar-header">
                <div class="logo">
-                   <img src="<cfoutput>#session.urlsite#/</cfoutput>assets/images/icon/logo.png" alt="logo">
+                   <img src="../assets/img/logo.jpg" alt="logo">
                </div>
            </div>
            <div class="main-menu">
