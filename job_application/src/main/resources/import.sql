@@ -13,5 +13,7 @@ insert into Company value (1, 'Development', 'Bill Gates is a good guy', 'Micros
 insert into Company value (2, 'Internet shop', 'Located in California', 'Amazon', '555449856');
 insert into Company value (3, 'Supermarket', 'Meet for free', 'Walmart', '8885544221');
 insert into Company value (4, 'Cool gadgets', 'If you are working here you would get a new phone for 1$', 'Apple', '8956215454');
-insert into jobapplication value (1, false, 'hard job', 'Java developer', '2012-2-22', 85000, 2, 5);
+insert into jobapplication value (1, true, 'hard job', 'Java developer', '2012-2-22', 85000, 2, 5);
 insert into jobapplication value (2, true, 'easy job', 'HTTP developer', '2011-12-5', 65000, 3, 2);
+insert into jobapplication value (3, true, 'medium job', 'C++ developer', '2013-7-14', 120000, 3, 1);
+insert into jobapplication value (4, false, 'good job', 'Driver', '2012-2-22', 50000, 4, 10);

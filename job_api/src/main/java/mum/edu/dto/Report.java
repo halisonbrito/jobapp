@@ -1,4 +1,4 @@
-package edu.mum.entities;
+package mum.edu.dto;
 
 public class Report {
     private String company;
