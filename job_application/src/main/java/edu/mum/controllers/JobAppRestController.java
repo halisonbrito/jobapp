@@ -72,7 +72,7 @@ public class JobAppRestController {
     }
 
     @PostMapping(value = "/students", consumes = "application/json")
-    public RedirectView addStudent(@Valid @RequestBody Company company){
+    public RedirectView addStudent(@RequestBody Company company){
         companyService.add(company);
         return new RedirectView("/students");
     }
@@ -83,25 +83,25 @@ public class JobAppRestController {
     }
 
     @PostMapping(value = "/applications", consumes = "application/json")
-    public  RedirectView addApplication(@Valid @RequestBody JobApplication application){
+    public  RedirectView addApplication(@RequestBody JobApplication application){
         jobApplicationService.add(application);
         return new RedirectView("/applications");
     }
 
     @PutMapping(value = "/students", consumes = "application/json")
-    public RedirectView updateStudent(@Valid @RequestBody Company company){
+    public RedirectView updateStudent(@RequestBody Company company){
         companyService.update(company);
         return new RedirectView("/students");
     }
 
     @PutMapping(value = "/companies", consumes = "application/json")
-    public RedirectView updateCompany(@Valid @RequestBody Company company){
+    public RedirectView updateCompany(@RequestBody Company company){
         companyService.update(company);
         return new RedirectView("/companies");
     }
 
     @PutMapping(value = "/applications", consumes = "application/json")
-    public  RedirectView updateApplication(@Valid @RequestBody JobApplication application){
+    public  RedirectView updateApplication(@RequestBody JobApplication application){
         jobApplicationService.update(application);
         return new RedirectView("/applications");
     }

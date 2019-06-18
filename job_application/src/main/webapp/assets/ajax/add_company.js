@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    $("#butt").on('click', function (evt) {
+    $("#sbCadastrarGrupo").on('click', function (evt) {
 
         var nameP = $("div #name").val();
         var descriptionP = $("div #description").val();

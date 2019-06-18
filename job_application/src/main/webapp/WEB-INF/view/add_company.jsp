@@ -52,7 +52,7 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="cal-control pull-left">
-                                            <button type="submit" data-loading-text="Loading..." class="btn btn-success pull-right" name="sbCadastrarGrupo"  id="sbCadastrarGrupo">Save</button>
+                                            <button type="button" data-loading-text="Loading..." class="btn btn-success pull-right" name="sbCadastrarGrupo"  id="sbCadastrarGrupo">Save</button>
                                         </div>
                                     </div>
                                 </div>
