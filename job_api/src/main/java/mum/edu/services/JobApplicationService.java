@@ -10,11 +10,10 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import mum.edu.ConfigProperties;
-import mum.edu.dto.Company;
 import mum.edu.dto.JobApplication;
 
 @Service
-public class JobApplicationService {
+public class JobApplicationService implements IJobApplicationService{
 
 	@Autowired
 	private RestTemplate restTemplate;

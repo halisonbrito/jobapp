@@ -11,10 +11,14 @@
                    <nav>
                        <ul class="metismenu" id="menu">
                            <li class="">
-                               <a href="javascript:void(0)" aria-expanded="true"><i class="ti-write"></i><span>Cadastro</span></a>
+                               <a href="http://localhost:8080/list_companies.jsp" aria-expanded="true"><i class="ti-view-list"></i><span>Company</span></a>
                            </li>
                            <li>
-                               <a href="javascript:void(0)" aria-expanded="true"><i class="ti-view-list"></i><span>Listar
+                               <a href="http://localhost:8080/list_applications.jsp" aria-expanded="true"><i class="ti-view-list"></i><span>Job Application
+                                   </span></a>
+                           </li>
+                           <li>
+                               <a href="http://localhost:8080/list_reference.jsp" aria-expanded="true"><i class="ti-view-list"></i><span>References
                                    </span></a>
                            </li>
 

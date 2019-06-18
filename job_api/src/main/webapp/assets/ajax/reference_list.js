@@ -171,17 +171,21 @@ $(document).ready(function () {
 		 
 	 });
 	
-	/** $('#tableReference').on( 'click', 'tbody tr', function () {
 
-	    //id = table.row(this).data().id;
-		//$('#tmSessionType').val(table.row(this).data().sessionType);
-		
-		
-		
-	
-	    
-
-    } );*/	
-	
+	 $("#delete").on('click', function () {
+	    $.ajax({
+	        url: "http://localhost:8080/references/" + referenceId,
+	        type: 'DELETE',
+	        success: function (session) {
+	        	alert('Success')
+	            window.location.replace("http://localhost:8080/list_reference.jsp");
+	        },
+	        error: function (data) {
+	        	alert('ERROR')
+	        }
+	    });
+	 
+	 });
+	 
 	
 });

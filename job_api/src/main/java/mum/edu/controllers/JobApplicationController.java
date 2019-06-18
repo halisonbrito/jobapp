@@ -18,19 +18,19 @@ import org.springframework.web.bind.annotation.RestController;
 import mum.edu.dto.Company;
 import mum.edu.dto.JobApplication;
 import mum.edu.dto.Student;
-import mum.edu.services.CompanyService;
-import mum.edu.services.JobApplicationService;
-import mum.edu.services.StudentService;
+import mum.edu.services.ICompanyService;
+import mum.edu.services.IJobApplicationService;
+import mum.edu.services.IStudentService;
 
 @RestController
 @RequestMapping("applications")
 public class JobApplicationController {
     @Resource
-    private StudentService studentService;
+    private IStudentService studentService;
     @Resource
-    private CompanyService companyService;
+    private ICompanyService companyService;
     @Resource
-    private JobApplicationService jobApplicationService;
+    private IJobApplicationService jobApplicationService;
 
     @GetMapping
     public List<JobApplication> getAllApplications(){
