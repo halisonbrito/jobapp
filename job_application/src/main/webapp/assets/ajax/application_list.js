@@ -5,6 +5,7 @@ $(document).ready(function () {
 	var table = $('#tableApplications').DataTable({
 	       dom: 'lBfrtip',
 	        "processing": true,
+            "paging": false,
 	        "ajax": {
 	            "url": url,
 	            dataSrc: ''
@@ -14,10 +15,12 @@ $(document).ready(function () {
 	            {"data": "description"},
 	            {"data": "position"},
 	            {"data": "salary"},
+                {"data": "approved"},
 				{"data": "studentName"},
 				{"data": "companyName"},
 	            ]
 	    });
+
 
 	$("#addAppBtn").on('click', function () {
 		window.location.replace("http://localhost:8080/test/addapplication");
@@ -37,10 +40,16 @@ $(document).ready(function () {
 		$('#studentId').val(table.row(this).data().studentId);
 		$('#companyId').val(table.row(this).data().companyId);
 
+        if (table.row(this).data().approved == true){
+            $('#apprButton').attr("hidden","true");
+        }else {
+            $('#apprButton').removeAttr("hidden");
+        }
 
 		$('#myModal').modal('show');
 
 	} );
+
 
 });
 
@@ -70,20 +79,46 @@ function deleteAction() {
 	});
 };
 
-function updateAction() {
-	let processBeginningDateP = $("#processBeginningDate").val();
-	let descriptionP = $("#description").val();
-	let approvedP = $("#approved").val();
-	let positionP = $("#position").val();
-	let salaryP = $("#salary").val();
-	let idP = $("#id").val();
-	let studentIdP = $("#studentId").val();
-	let companyIdP = $("#companyId").val();
+function approvedAction() {
+    $.ajax({
+        url: "http://localhost:8080/applications/setapproved?appId="+$("#id").val()+"&approved=true",
+        type: 'PUT',
+        success: function (session) {
+            window.location.replace("http://localhost:8080/test/applications");
+        },
+        error: function (data) {
+            $("#sucess").text("");
 
-	let dataObject = { processBeginningDate:processBeginningDateP, description:descriptionP, approved:approvedP,
+            var messages = "";
+
+            if (data.responseJSON.validationMessages) {
+                $.each(data.responseJSON.validationMessages, function (index, errorMessage) {
+                    messages += errorMessage + "<br>"
+                });
+            } else {
+                messages = data.responseJSON.userMessage;
+            }
+
+            $("#error").text("");
+            $("#error").append(messages);
+        }
+    });
+};
+
+function updateAction() {
+	var processBeginningDateP = $("#processBeginningDate").val();
+    var descriptionP = $("#description").val();
+    var approvedP = $("#approved").val();
+    var positionP = $("#position").val();
+    var salaryP = $("#salary").val();
+    var idP = $("#id").val();
+    var studentIdP = $("#studentId").val();
+    var companyIdP = $("#companyId").val();
+
+    var dataObject = { processBeginningDate:processBeginningDateP, description:descriptionP, approved:approvedP,
 		position:positionP, salary: salaryP, id:idP};
 
-	let jsonData = JSON.stringify(dataObject);
+    var jsonData = JSON.stringify(dataObject);
 
 	$.ajax({
 		url: "http://localhost:8080/applications",

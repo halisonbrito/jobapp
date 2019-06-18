@@ -1,92 +1,95 @@
 $(document).ready(function () {
-	
-	var url = "http://localhost:8080/companies";
-	
-	var table = $('#tableCompany').DataTable({
-	       dom: 'lBfrtip',
-	        "processing": true,
-	        "ajax": {
-	            "url": url,
-	            dataSrc: ''
-	        },
-	        "columns": [
-	            {"data": "name"},
-	            {"data": "businessType"},
-	            {"data": "description"},
-	            {"data": "phone"}
-	            ]
-	    });
 
-	$("#addCompanyBtn").on('click', function () {
-		window.location.replace("http://localhost:8080/test/addcompany");
-	})
+    var url = "http://localhost:8080/companies";
 
-	$('#tableCompany').on( 'click', 'tbody tr', function () {
+    var table = $('#tableCompany').DataTable({
+        dom: 'lBfrtip',
+        "processing": true,
+        "paging": false,
+        "ajax": {
+            "url": url,
+            dataSrc: ''
+        },
+        "columns": [
+            {"data": "name"},
+            {"data": "businessType"},
+            {"data": "description"},
+            {"data": "phone"}
+        ]
+    });
 
-		//id = table.row(this).data().id;
-		//$('#tmSessionType').val(table.row(this).data().sessionType);
+    $("#addCompanyBtn").on('click', function () {
+        window.location.replace("http://localhost:8080/test/addcompany");
+    })
 
-		$('#name').val(table.row(this).data().name);
-		$('#businessType').val(table.row(this).data().businessType);
-		$('#description').val(table.row(this).data().description);
-		$('#phone').val(table.row(this).data().phone);
-		$('#id').val(table.row(this).data().id);
+    $('#tableCompany').on('click', 'tbody tr', function () {
+
+        //id = table.row(this).data().id;
+        //$('#tmSessionType').val(table.row(this).data().sessionType);
+
+        $('#name').val(table.row(this).data().name);
+        $('#businessType').val(table.row(this).data().businessType);
+        $('#description').val(table.row(this).data().description);
+        $('#phone').val(table.row(this).data().phone);
+        $('#id').val(table.row(this).data().id);
 
 
-		$('#myModal').modal('show');
+        $('#myModal').modal('show');
 
-	} );
+    });
 });
 
 function deleteAction() {
-	console.log("test");
-	$.ajax({
-		url: "http://localhost:8080/companies/"+$("#id").val(),
-		type: 'DELETE',
-		success: function (session) {
-			window.location.replace("http://localhost:8080/test/companies");
-		},
-		error: function (data) {
-			$("#sucess").text("");
+    console.log("test");
+    $.ajax({
+        url: "http://localhost:8080/companies/" + $("#id").val(),
+        type: 'DELETE',
+        success: function (session) {
+            window.location.replace("http://localhost:8080/test/companies");
+        },
+        error: function (data) {
+            $("#sucess").text("");
 
-			var messages = "";
+            var messages = "";
 
-			if (data.responseJSON.validationMessages) {
-				$.each(data.responseJSON.validationMessages, function (index, errorMessage) {
-					messages += errorMessage + "<br>"
-				});
-			} else {
-				messages = data.responseJSON.userMessage;
-			}
+            if (data.responseJSON.validationMessages) {
+                $.each(data.responseJSON.validationMessages, function (index, errorMessage) {
+                    messages += errorMessage + "<br>"
+                });
+            } else {
+                messages = data.responseJSON.userMessage;
+            }
 
-			$("#error").text("");
-			$("#error").append(messages);
-		}
-	});
+            $("#error").text("");
+            $("#error").append(messages);
+        }
+    });
 };
 
 function updateAction() {
-	let nameP = $("#name").val();
-	let descriptionP = $("#description").val();
-	let businessTypeP = $("#businessType").val();
-	let phoneP = $("#phone").val();
-	let idP = $("#id").val();
+    var nameP = $("#name").val();
+    var descriptionP = $("#description").val();
+    var businessTypeP = $("#businessType").val();
+    var phoneP = $("#phone").val();
+    var idP = $("#id").val();
 
-	let dataObject = { name:nameP, description:descriptionP, businessType:businessTypeP,
-		phone:phoneP, id: idP};
+    var dataObject = {
+        name: nameP, description: descriptionP, businessType: businessTypeP,
+        phone: phoneP, id: idP
+    };
 
-	let jsonData = JSON.stringify(dataObject);
+    var jsonData = JSON.stringify(dataObject);
 
-	$.ajax({
-		url: "http://localhost:8080/companies",
-		type: 'PUT',
-		data: jsonData,
-		contentType: 'application/json',   // Sends
-		success: function (session) {
-			window.location.replace("http://localhost:8080/test/companies");
-		},
-		error: function (data) {
-			console.log("error");
-		}
-	});
+    $.ajax({
+        url: "http://localhost:8080/companies",
+        type: 'PUT',
+        data: jsonData,
+        contentType: 'application/json',   // Sends
+        success: function (session) {
+            window.location.replace("http://localhost:8080/test/companies");
+        },
+        error: function (data) {
+            console.log("error");
+        }
+    });
 }

@@ -39,6 +39,7 @@
                                     <th class="th-sm">Description</th>
                                     <th class="th-sm">Position</th>
                                     <th class="th-sm">Salary</th>
+                                    <th class="th-sm">Approved</th>
                                     <th class="th-sm">Student name</th>
                                     <th class="th-sm">Company name</th>
                                 </tr>
@@ -88,20 +89,20 @@
                                                                 </div>
 
                                                                 <div class="col-md-4">
-                                                                    <label>Approved:</label>
+                                                                    <label>Salary:</label>
+                                                                    <input class="form-control" name="salary"
+                                                                           id="salary" type="number">
+                                                                </div>
+
+                                                                <div class="col-md-4">
                                                                     <input class="form-control" name="approved"
-                                                                           id="approved" type="checkbox">
+                                                                           id="approved" type="hidden">
                                                                 </div>
                                                             </div>
                                                         </div>
 
                                                         <div class="form-group">
                                                             <div class="row">
-                                                                <div class="col-md-4">
-                                                                    <label>Salary:</label>
-                                                                    <input class="form-control" name="salary"
-                                                                           id="salary" type="number">
-                                                                </div>
 
                                                                 <div class="col-md-4">
                                                                     <label>Student:</label>
@@ -119,11 +120,17 @@
 
                                                     </div>
                                                 </div>
-                                                <button type="button" onclick="updateAction()" class="btn btn-primary"
+                                                <button type="button" onclick="updateAction()"
+                                                        class="btn btn-primary"
                                                         id="update">Update
                                                 </button>
-                                                <button type="button" onclick="deleteAction()" class="btn btn-danger"
+                                                <button type="button" onclick="deleteAction()"
+                                                        class="btn btn-danger"
                                                         id="delete">Delete
+                                                </button>
+                                                <button type="button" id="apprButton" onclick="approvedAction()"
+                                                        class="btn btn-success"
+                                                        id="approve">Approve
                                                 </button>
                                             </form>
 

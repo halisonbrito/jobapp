@@ -18,7 +18,7 @@
                     <!-- Form Elements -->
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h3>Add Company</h3>
+                            <h3>Add Application</h3>
                         </div>
                         <div class="panel-body">
                         
@@ -44,12 +44,8 @@
                                                <div class="col-md-4">
                                                    <label>Salary:</label>
                                                    <input  class="form-control" name="salary" id="salary" type="number">
+                                                   input class="form-control" name="approved" id="approved" type="hidden" value="false">
                                                </div>
-                                               <div class="col-md-4">
-                                                   <div>
-                                                       <label>Approved:</label><input  class="form-control" name="approved" id="approved" type="checkbox" value="false">
-                                                   </div>
-0                                               </div>
                                                <div class="col-md-4">
                                                    <label>Company:</label>
                                                    <input  class="form-control" name="company" id="company" type="text">
