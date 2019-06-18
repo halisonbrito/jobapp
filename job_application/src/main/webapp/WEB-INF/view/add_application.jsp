@@ -1,3 +1,4 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 
 <jsp:include page="/include/head.jsp" />
 <jsp:include page="/include/menu-topo.jsp" />
@@ -28,20 +29,34 @@
                                    <div class="form-group">
                                            <div class="row">
                                                <div class="col-md-4">
-                                                   <label>Name:</label>
-                                                   <input  class="form-control" name="name" id="name" type="text"> 
+                                                   <label>Begin date:</label>
+                                                   <input  class="form-control" name="processBeginningDate" id="processBeginningDate" type="date">
+                                                   <input  class="form-control" name="id" id="id" type="hidden">
                                                </div>
                                                <div class="col-md-4">
                                                    <label>Description:</label>
-                                                   <input  class="form-control" name="name" id="description" type="text">
+                                                   <input  class="form-control" name="description" id="description" type="text">
                                                </div>
                                                <div class="col-md-4">
-                                                   <label>Business type:</label>
-                                                   <input  class="form-control" name="name" id="businessType" type="text">
+                                                   <label>Position:</label>
+                                                   <input  class="form-control" name="position" id="position" type="text">
                                                </div>
                                                <div class="col-md-4">
-                                                   <label>Phone:</label>
-                                                   <input  class="form-control" name="name" id="phone" type="text">
+                                                   <label>Salary:</label>
+                                                   <input  class="form-control" name="salary" id="salary" type="number">
+                                               </div>
+                                               <div class="col-md-4">
+                                                   <div>
+                                                       <label>Approved:</label><input  class="form-control" name="approved" id="approved" type="checkbox" value="false">
+                                                   </div>
+0                                               </div>
+                                               <div class="col-md-4">
+                                                   <label>Company:</label>
+                                                   <input  class="form-control" name="company" id="company" type="text">
+                                               </div>
+                                               <div class="col-md-4">
+                                                   <label>Student:</label>
+                                                   <input  class="form-control" name="company" id="student" type="text">
                                                </div>
                                            </div>
                                     </div>
@@ -52,7 +67,7 @@
                               <div class="row">
                                   <div class="col-md-12">
                                       <div class="cal-control pull-left">
-                                      	<button type="button" data-loading-text="Loading..." class="btn btn-success pull-right" name="sbCadastrarGrupo"  id="sbCadastrarGrupo">Save</button>
+                                          <button type="button" data-loading-text="Loading..." class="btn btn-success pull-right" name="sbCadastrarGrupo"  id="sbCadastrarGrupo">Save</button>
                                     </div>
                                   </div>
                               </div>
@@ -71,3 +86,4 @@
   </div>
             
 <jsp:include page="/include/footer.jsp" />
+<script src="../assets/ajax/add_application.js"></script>

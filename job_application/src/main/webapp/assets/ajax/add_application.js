@@ -2,23 +2,28 @@ $(document).ready(function () {
 
     $("#sbCadastrarGrupo").on('click', function (evt) {
 
-        var nameP = $("div #name").val();
+        var processBeginningDateP = $("div #processBeginningDate").val();
         var descriptionP = $("div #description").val();
-        var businessTypeP = $("div #businessType").val();
-        var phoneP = $("div #phone").val();
+        var approvedP = $("div #approved").val();
+        var positionP = $("div #position").val();
+        var salaryP = $("div #salary").val();
+        var studentP = $("div #student").val();
+        var companyP = $("div #company").val();
 
-        var dataObject = { name:nameP, description:descriptionP, businessType:businessTypeP,
-            phone:phoneP};
+        var dataObject = { processBeginningDate:processBeginningDateP, description:descriptionP, approved:approvedP,
+            position:positionP, salary:salaryP};
+
+        console.log(dataObject);
 
         var jsonData = JSON.stringify(dataObject);
 
         $.ajax({
-            url: "http://localhost:8080/companies",
+            url: "http://localhost:8080/applications?studId="+studentP+"&compId="+companyP,
             type: 'POST',
             data: jsonData,
             contentType: 'application/json',   // Sends
             success: function (session) {
-                window.location.replace("http://localhost:8080/test/companies");
+                window.location.replace("http://localhost:8080/test/applications");
             },
             error: function (data) {
                 $("#sucess").text("");

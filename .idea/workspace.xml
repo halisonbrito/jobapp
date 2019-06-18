@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="68a87774-437e-4c65-ab9b-d8965a9f80db" name="Default Changelist" comment="xcvxcv">
+    <list default="true" id="68a87774-437e-4c65-ab9b-d8965a9f80db" name="Default Changelist" comment="finished views">
+      <change afterPath="$PROJECT_DIR$/job_application/src/main/java/edu/mum/controllers/JobApplicationRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/job_application/src/main/java/edu/mum/controllers/StudentRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/job_application/src/main/webapp/WEB-INF/view/testList.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/job_application/src/main/webapp/assets/ajax/add_application.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/job_application/src/main/webapp/META-INF/context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/job_application/src/main/webapp/META-INF/context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/job_application/src/main/webapp/WEB-INF/view/bookDetail.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/job_application/src/main/webapp/WEB-INF/view/bookList.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/job_application/src/main/webapp/WEB-INF/view/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/job_api/src/main/webapp/list_reference.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/job_api/src/main/webapp/list_reference.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job_application/src/main/java/edu/mum/controllers/JobAppRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/job_application/src/main/java/edu/mum/controllers/CompanyRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job_application/src/main/java/edu/mum/controllers/JobApplicationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/job_application/src/main/java/edu/mum/controllers/TestJobApplicationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job_application/src/main/java/edu/mum/entities/JobApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/job_application/src/main/java/edu/mum/entities/JobApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job_application/src/main/java/edu/mum/services/JobApplicationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/job_application/src/main/java/edu/mum/services/JobApplicationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job_application/src/main/webapp/WEB-INF/view/add_application.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/job_application/src/main/webapp/WEB-INF/view/add_application.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job_application/src/main/webapp/WEB-INF/view/add_company.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/job_application/src/main/webapp/WEB-INF/view/add_company.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job_application/src/main/webapp/WEB-INF/view/list_applications.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/job_application/src/main/webapp/WEB-INF/view/list_applications.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job_application/src/main/webapp/WEB-INF/view/list_companies.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/job_application/src/main/webapp/WEB-INF/view/list_companies.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job_application/src/main/webapp/assets/ajax/add_company.js" beforeDir="false" afterPath="$PROJECT_DIR$/job_application/src/main/webapp/assets/ajax/add_company.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job_application/src/main/webapp/assets/ajax/application_list.js" beforeDir="false" afterPath="$PROJECT_DIR$/job_application/src/main/webapp/assets/ajax/application_list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job_application/src/main/webapp/assets/ajax/company_list.js" beforeDir="false" afterPath="$PROJECT_DIR$/job_application/src/main/webapp/assets/ajax/company_list.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,15 +36,55 @@
     <option name="delegatedBuild" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/job_api/src/main/webapp/list_reference.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2176">
+              <caret line="128" selection-start-line="128" selection-end-line="128" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/job_api/src/main/webapp/assets/ajax/reference_add.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>tableReference</find>
+      <find>myModal</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="application" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/job_application/pom.xml" />
+        <option value="$PROJECT_DIR$/job_api/src/main/webapp/list_reference.jsp" />
       </list>
     </option>
   </component>
@@ -54,6 +106,51 @@
               <item name="jobapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="jobapp" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="jobapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jobapp" type="462c0819:PsiDirectoryNode" />
+              <item name="job_api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jobapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jobapp" type="462c0819:PsiDirectoryNode" />
+              <item name="job_api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jobapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jobapp" type="462c0819:PsiDirectoryNode" />
+              <item name="job_api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jobapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jobapp" type="462c0819:PsiDirectoryNode" />
+              <item name="job_api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jobapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jobapp" type="462c0819:PsiDirectoryNode" />
+              <item name="job_api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jobapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jobapp" type="462c0819:PsiDirectoryNode" />
+              <item name="job_api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="ajax" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -67,7 +164,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/job_application" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -96,16 +193,29 @@
       <workItem from="1560724888615" duration="556000" />
       <workItem from="1560726023910" duration="955000" />
       <workItem from="1560747853785" duration="124000" />
+      <workItem from="1560822790120" duration="319000" />
+      <workItem from="1560823127935" duration="620000" />
+      <workItem from="1560833482931" duration="3058000" />
+      <workItem from="1560840722855" duration="59000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1635000" />
+    <option name="totallyTimeSpent" value="5691000" />
+  </component>
+  <component name="TodoView" selected-index="3">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25637585" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18926175" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -118,12 +228,12 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49932885" weight="0.3286119" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4986577" weight="0.3286119" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50067115" side_tool="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3286119" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5013423" side_tool="true" weight="0.3286119" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -138,6 +248,10 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="finished views" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished views" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/job_application/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -145,6 +259,33 @@
           <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/job_application/src/main/webapp/WEB-INF/view/test.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/job_api/src/main/webapp/assets/ajax/reference_list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="19" column="4" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/job_api/src/main/webapp/add_reference.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="38" lean-forward="true" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/job_api/src/main/webapp/list_reference.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2176">
+          <caret line="128" selection-start-line="128" selection-end-line="128" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/job_api/src/main/webapp/assets/ajax/reference_add.js">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
