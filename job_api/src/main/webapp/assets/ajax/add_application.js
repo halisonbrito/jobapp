@@ -1,5 +1,17 @@
 $(document).ready(function () {
 
+    $.getJSON('http://localhost:8080/companies', function(j){
+        var options = '';   
+        j.forEach( c => {
+        	options += '<option value="' + c.id+ '">' + c.name + '</option>';
+        	console.log(c.name)
+        	
+        });
+        $('#company').html(options).show();
+
+    });
+	
+	
     $("#sbCadastrarGrupo").on('click', function (evt) {
 
         var processBeginningDateP = $("div #processBeginningDate").val();

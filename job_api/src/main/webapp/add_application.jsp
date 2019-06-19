@@ -48,7 +48,8 @@
                                                </div>
                                                <div class="col-md-4">
                                                    <label>Company:</label>
-                                                   <input  class="form-control" name="company" id="company" type="text">
+                                                   <select class="form-control" name="company" id="company"></select>
+                                                   
                                                </div>
                                                <div class="col-md-4">
                                                    <label>Student:</label>
