@@ -29,7 +29,7 @@ public class ReportService {
 		ResponseEntity<List<Report>> response =
 				restTemplate.exchange(getUrlServiceCompany(), HttpMethod.GET, null,
 				new ParameterizedTypeReference<List<Report>>() {});
-		
-		return response.getBody();
+		List<Report> reports = response.getBody();
+		return reports;
     }
 }

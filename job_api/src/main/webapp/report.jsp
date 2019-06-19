@@ -16,17 +16,21 @@
                         <h3>Report</h3>
                     </div>
 
-                        <table id="tableCompany" class="table table-striped table-bordered table-sm" cellspacing="0"
-                               width="100%">
-                            <thead>
-                            <tr>
-                                <th class="th-sm">Company name</th>
-                                <th class="th-sm">Description</th>
-                                <th class="th-sm">Students</th>
-                                <th class="th-sm">Salary(avr)</th>
-                            </tr>
-                            </thead>
-                        </table>
+                    <table id="tableReport" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
+                        <thead>
+                        <tr>
+                            <th class="th-sm"></th>
+                            <th class="th-sm">Company name</th>
+                            <th class="th-sm">Description</th>
+                            <th class="th-sm">Students</th>
+                            <th class="th-sm">Salary(avr)</th>
+                            <th class="th-sm">Max salary</th>
+                        </tr>
+                        </thead>
+                    </table>
+
+
+
                     </div>
                 </div>
             </div>
