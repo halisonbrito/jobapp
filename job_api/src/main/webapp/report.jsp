@@ -23,7 +23,7 @@
                             <th class="th-sm">Company name</th>
                             <th class="th-sm">Description</th>
                             <th class="th-sm">Students</th>
-                            <th class="th-sm">Salary(avr)</th>
+                            <th class="th-sm">Salary(Avg)</th>
                             <th class="th-sm">Max salary</th>
                         </tr>
                         </thead>

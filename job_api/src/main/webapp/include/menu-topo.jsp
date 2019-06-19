@@ -21,6 +21,10 @@
                                <a href="http://localhost:8080/list_reference.jsp" aria-expanded="true"><i class="ti-view-list"></i><span>References
                                    </span></a>
                            </li>
+                           <li>
+                               <a href="http://localhost:8080/report.jsp" aria-expanded="true"><i class="ti-view-list"></i><span>Report
+                                   </span></a>
+                           </li>
 
 
                        </ul>
