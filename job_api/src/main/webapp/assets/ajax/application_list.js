@@ -5,7 +5,6 @@ $(document).ready(function () {
 	var table = $('#tableApplications').DataTable({
 	       dom: 'lBfrtip',
 	        "processing": true,
-            "paging": false,
 	        "ajax": {
 	            "url": url,
 	            dataSrc: ''

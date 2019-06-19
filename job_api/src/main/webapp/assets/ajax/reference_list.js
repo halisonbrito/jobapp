@@ -37,7 +37,6 @@ $(document).ready(function () {
 	var url = "http://localhost:8080/students";
 	
 	var table = $('#tableReference').DataTable({
-		 	"paging":false,
 		
 			"columnDefs": [
 	            {
