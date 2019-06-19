@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68a87774-437e-4c65-ab9b-d8965a9f80db" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/job_references/src/main/resources/import.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/job_application/src/main/resources/import.sql" beforeDir="false" afterPath="$PROJECT_DIR$/job_application/src/main/resources/import.sql" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,11 +15,34 @@
       <executable />
     </execution>
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/job_references/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="15" lean-forward="true" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/job_application/src/main/webapp/WEB-INF/view/test.jsp">
           <provider selected="true" editor-type-id="text-editor" />
@@ -49,11 +70,20 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/job_application/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="36" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/job_references/src/main/java/mum/edu/entities/Reference.java">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/job_api/src/main/webapp/list_reference.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="621">
@@ -107,6 +137,8 @@
         <option value="$PROJECT_DIR$/job_api/src/main/webapp/list_reference.jsp" />
         <option value="$PROJECT_DIR$/job_api/src/main/java/mum/edu/services/CompanyService.java" />
         <option value="$PROJECT_DIR$/job_application/src/main/java/edu/mum/entities/Student.java" />
+        <option value="$PROJECT_DIR$/job_application/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/job_references/src/main/resources/application.properties" />
       </list>
     </option>
   </component>
@@ -131,51 +163,6 @@
             <path>
               <item name="jobapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="jobapp" type="462c0819:PsiDirectoryNode" />
-              <item name="job_api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jobapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jobapp" type="462c0819:PsiDirectoryNode" />
-              <item name="job_api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jobapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jobapp" type="462c0819:PsiDirectoryNode" />
-              <item name="job_api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jobapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jobapp" type="462c0819:PsiDirectoryNode" />
-              <item name="job_api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jobapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jobapp" type="462c0819:PsiDirectoryNode" />
-              <item name="job_api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jobapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jobapp" type="462c0819:PsiDirectoryNode" />
-              <item name="job_api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="ajax" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jobapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jobapp" type="462c0819:PsiDirectoryNode" />
               <item name="job_references" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -190,77 +177,6 @@
               <item name="job_references" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jobapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jobapp" type="462c0819:PsiDirectoryNode" />
-              <item name="job_references" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jobapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jobapp" type="462c0819:PsiDirectoryNode" />
-              <item name="job_references" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mum" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jobapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jobapp" type="462c0819:PsiDirectoryNode" />
-              <item name="job_references" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mum" type="462c0819:PsiDirectoryNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jobapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jobapp" type="462c0819:PsiDirectoryNode" />
-              <item name="job_references" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mum" type="462c0819:PsiDirectoryNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jobapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jobapp" type="462c0819:PsiDirectoryNode" />
-              <item name="job_references" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mum" type="462c0819:PsiDirectoryNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="entities" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jobapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jobapp" type="462c0819:PsiDirectoryNode" />
-              <item name="job_references" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mum" type="462c0819:PsiDirectoryNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="repositories" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jobapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jobapp" type="462c0819:PsiDirectoryNode" />
-              <item name="job_references" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mum" type="462c0819:PsiDirectoryNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jobapp" type="b2602c69:ProjectViewProjectNode" />
@@ -321,6 +237,7 @@
       <workItem from="1560901338853" duration="145000" />
       <workItem from="1560906551620" duration="702000" />
       <workItem from="1560911262887" duration="26000" />
+      <workItem from="1560912086137" duration="131000" />
     </task>
     <task id="LOCAL-00001" summary="finished views">
       <created>1560880096988</created>
@@ -343,11 +260,18 @@
       <option name="project" value="LOCAL" />
       <updated>1560907250157</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Job Application 1.0">
+      <created>1560912192786</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1560912192791</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8312000" />
+    <option name="totallyTimeSpent" value="8443000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -360,9 +284,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.34295303" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.347651" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -389,7 +312,7 @@
       <window_info anchor="right" id="Maven" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Database" order="8" />
+      <window_info anchor="right" id="Database" order="8" weight="0.3295302" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -399,7 +322,8 @@
     <MESSAGE value="finished views" />
     <MESSAGE value="report" />
     <MESSAGE value="report final version" />
-    <option name="LAST_COMMIT_MESSAGE" value="report final version" />
+    <MESSAGE value="Job Application 1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="Job Application 1.0" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/job_application/pom.xml">
@@ -488,6 +412,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="621">
           <caret line="128" selection-start-line="128" selection-end-line="128" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/job_application/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="36" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/job_references/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="15" lean-forward="true" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
         </state>
       </provider>
     </entry>
